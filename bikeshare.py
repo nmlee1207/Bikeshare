@@ -15,8 +15,16 @@ CITY_DATA = { 'chicago': 'chicago.csv',
        (str) day - name of the day of week to filter by, or "all" to apply no day filter
 """
 print('Hello! Let\'s explore some US bikeshare data!')
+<<<<<<< HEAD
 
     # get user input for city (chicago, new york city, washington)
+||||||| 264ea1a
+ 
+    # get user input for city (chicago, new york city, washington). 
+=======
+
+    # get user input for city (chicago, new york city, washington).
+>>>>>>> refactoring
 def city_input():
     city = input("Please enter what cities data you would like to view (chicago, new york city, washington): ")
     city = city.lower()
@@ -130,11 +138,11 @@ def trip_duration_stats(df):
     # display total travel time
     df = pd.DataFrame(df,columns=['Trip Duration'])
     total_travel_time = df.sum(axis=0)
-    print ("Total travel time:\n",int(total_travel_time // 60),"Hours",int(total_travel_time % 60), "Minutes")
+    print ('Total travel time: {} Hours {} Minutes'.format.int(total_travel_time // 60).formate.int(total_travel_time % 60))
 
     # display mean travel time
     mean_travel = df['Trip Duration'].mean()
-    print('\nMean Travel Time:',int(mean_travel // 60),"Hours",int(mean_travel % 60), "Minutes")
+    print('\nMean Travel Time: {} Hours {} Minutes'.format.int(mean_travel // 60).format.int(mean_travel % 60))
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -152,25 +160,33 @@ def user_stats(df):
         print('\n',user_gender_count)
     except KeyError:
         print('\nNo "Gender" data to display gender count.')
+<<<<<<< HEAD
       
     # display earliest, most recent, and most common year of birth
+||||||| 264ea1a
+      
+    # TO DO: Display earliest, most recent, and most common year of birth   
+=======
+
+    # display earliest, most recent, and most common year of birth
+>>>>>>> refactoring
     try:
         birth_yr_min = df['Birth Year'].min()
-        print('\nEarliest Birth Year:',int(birth_yr_min))
+        print('\nEarliest Birth Year: {}'.format.int(birth_yr_min))
     except KeyError:
         print('\nNo "Birth Year" data to calculate most earliest birth year.')
 
 
     try:
         birth_yr_max = df['Birth Year'].max()
-        print('\nMost Recent Birth Year:',int(birth_yr_max))
+        print('\nMost Recent Birth Year: {}'.format.int(birth_yr_max))
     except KeyError:
         print('\nNo "Birth Year" data to calculate most recent birth year.')
 
 
     try:
         birth_yr_mode = df['Birth Year'].mode()
-        print('\nMost Common Birth Year:',int(birth_yr_mode))
+        print('\nMost Common Birth Year: {}'.formate.int(birth_yr_mode))
     except KeyError:
         print('\nNo "Birth Year" data to calculate most common birth year.')
 
