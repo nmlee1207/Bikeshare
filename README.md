@@ -33,13 +33,13 @@ Statistics provided:
 
 ### Files used
 chicago.csv
-new_york_city
-washington
+new_york_city.csv
+washington.csv
 
 Each file has 8 columns and 300,000 rows of data. 
 
 ### Credits
 https://www.journaldev.com/33497/python-keyerror-exception-handling-examples
-https://www.tutorialspoint.com/python/
 https://stackoverflow.com/questions/30267420/while-loop-to-check-for-valid-user-input
+https://www.tutorialspoint.com/python/
 
